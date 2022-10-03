@@ -21,13 +21,11 @@ struct Location {
     int priceRangeMax;
 };
 
-// This class needs to be completed / implemented
 class PizzaZine {
 private:
         vector<Location> pizzaLocations;
 public:
 
-    // This function is implemented for you
     void readInFile(const string&, size_t);
 
     // The following functions need to be implemented
@@ -39,7 +37,6 @@ public:
 
 };
 
-// This function is implemented for you
 
 void PizzaZine::readInFile(const string& filename,size_t c) {
     ifstream inFile(filename);
@@ -83,7 +80,6 @@ void PizzaZine::readInFile(const string& filename,size_t c) {
     }
 }
 
-// Write remaining functions implementation here
 //returns location with matching index
 Location& PizzaZine::operator[](size_t index){
   return pizzaLocations.at(index);
